@@ -1,9 +1,10 @@
 {
-	"name": "my-tracker",
-	"version": "1.0.4",
+	"name": "fzh-tracker",
+	"version": "0.0.1",
 	"description": "",
-	"main": "dist/index.js",
+	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
+	"browser": "dist/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "rollup -c"

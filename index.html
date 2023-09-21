@@ -9,12 +9,15 @@
 	<body>
 		<button id="btn">pushState</button>
 
+		<script src="./dist/index.js"></script>
 		<script>
 			btn.onclick = function () {
 				history.pushState({}, '', '/a');
 			};
+			new tracker({
+				requestUrl: 'http://localhost:9000/tracker',
+				historyTracker: true,
+			})
 		</script>
-
-		<script src="./dist/index.js"></script>
 	</body>
 </html>
